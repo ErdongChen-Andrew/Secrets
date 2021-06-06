@@ -3,8 +3,12 @@ const express = require("express");
 const bodyparser = require("body-parser");
 const ejs = require("ejs");
 const mongoose = require("mongoose");
+<<<<<<< HEAD
 const bcrypt = require("bcrypt");
 // const md5 = require("md5");
+=======
+const md5 = require("md5");
+>>>>>>> 1394cf705ccbe6c8ae7fa6e300afc8d3fbb38d4b
 // const encrypt = require("mongoose-encryption");
 
 const app = express();
@@ -47,6 +51,7 @@ app.get("/register", function(req, res) {
   res.render("register");
 });
 
+<<<<<<< HEAD
 app.post("/register", function(req, res) {
 
   bcrypt.hash(req.body.password, saltRounds, function(err, hash) {
@@ -61,6 +66,19 @@ app.post("/register", function(req, res) {
         res.send(err);
       }
     });
+=======
+app.post("/register", function(req,res){
+  const newUser = new User({
+    email: req.body.username,
+    password: md5(req.body.password)
+  });
+  newUser.save(function(err){
+    if (!err){
+      res.render("secrets");
+    } else {
+      res.send(err);
+    }
+>>>>>>> 1394cf705ccbe6c8ae7fa6e300afc8d3fbb38d4b
   });
 
 
@@ -68,7 +86,7 @@ app.post("/register", function(req, res) {
 
 app.post("/login", function(req, res) {
   const username = req.body.username;
-  const password = req.body.password;
+  const password = md5(req.body.password);
 
   User.findOne({
     email: username
