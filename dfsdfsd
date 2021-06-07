@@ -1,0 +1,36 @@
+[33mcommit 5edeba7196cc8ed151a3048ceb5dd4691809b81c[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m
+Merge: a78eae3 1394cf7
+Author: Erdong Chen <erdong1993@gmail.com>
+Date:   Sun Jun 6 16:47:33 2021 -0700
+
+    Level 4: added bcrypt salting password
+
+[33mcommit a78eae3f61dc7455c528dc74995d6b812f49085c[m
+Author: Erdong Chen <erdong1993@gmail.com>
+Date:   Sun Jun 6 14:56:17 2021 -0700
+
+    Level 3: added md5 hashed password
+
+[33mcommit 1394cf705ccbe6c8ae7fa6e300afc8d3fbb38d4b[m[33m ([m[1;31morigin/main[m[33m)[m
+Author: Erdong Chen <erdong1993@gmail.com>
+Date:   Sun Jun 6 14:56:17 2021 -0700
+
+    Level 2: added md5 hashed password
+
+[33mcommit f5f3a2b914b9d77f02a7243e7b7f0ae5dc309c17[m
+Author: Erdong Chen <erdong1993@gmail.com>
+Date:   Sat Jun 5 22:05:52 2021 -0700
+
+    Level 2: added enviroment vars
+
+[33mcommit 4ab2b8b17560638976ccc27dae965d5d739eb41d[m
+Author: Erdong Chen <erdong1993@gmail.com>
+Date:   Sat Jun 5 21:48:00 2021 -0700
+
+    Level 2: added mongoose encryption
+
+[33mcommit ef4bba9d6820db4852c07f1803f00a320dc3703a[m
+Author: Erdong Chen <erdong1993@gmail.com>
+Date:   Sat Jun 5 21:44:59 2021 -0700
+
+    Level 1: only email and password
